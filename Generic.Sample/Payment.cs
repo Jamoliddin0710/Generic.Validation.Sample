@@ -12,7 +12,7 @@ namespace Generic.Sample
     {
         public int Id { get; set; }
         [Required]
-        public string Name { get; set; }
+        public string Title { get; set; }
         [Required]
         [DateAttribute]
         public DateTime RecievedDateTime { get; set; }

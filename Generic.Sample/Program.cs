@@ -10,7 +10,21 @@ var payment = new Payment()
     RecievedDateTime = date.LastDayOfMonth(),
 };
 
-var error = ValidationHelper.ValidateEntity(payment);
+/*var error = ValidationHelper.ValidateEntity(payment);
+
+foreach (var item in error.Errors)
+{
+    Console.WriteLine(item.ErrorMessage);
+}*/
+var student = new Student()
+{
+    Id = 1,
+    FullName = "Test",
+    GPA = 10,
+    MarriedStatus = "sbduibuisd"
+};
+
+var error = ValidationHelper.ValidateEntity(student);
 
 foreach (var item in error.Errors)
 {
